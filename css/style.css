@@ -366,7 +366,7 @@ button {
 	flex-direction: column;
 	margin-top: 33px;
 	width: 24%;
-	padding: 0px;
+	padding: 0;
 }
 
 .activity-cards img {
@@ -575,7 +575,7 @@ button {
 	button {
 		display: inline-block;
 		background-color: var(--main-color);
-		border: 0px;
+		border: 0;
 		width: 25%;
 		height: 50px;
 		margin: 0;
