@@ -136,7 +136,7 @@ nav a:hover {
 	background-color: #0044aa;
 }
 
-button {
+#rechercher {
 	display: none;
 }
 
@@ -155,7 +155,7 @@ button {
 	flex-direction: row;
 }
 
-.filtres a {
+.filtres button {
 	display: flex;
 	border: solid 2px rgb(185, 185, 185);
 	padding-top: 16px;
@@ -166,9 +166,11 @@ button {
 	max-height: 5px;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
+	background-color: white;
 }
 
-.filtres a:hover {
+.filtres button:hover {
 	background-color: #DEEBFF;
 }
 
@@ -200,6 +202,12 @@ button {
 .section-title {
 	margin: 0;
 	font-size: 22px;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
 }
 
 .card {
@@ -272,7 +280,7 @@ button {
 	border-top-right-radius: 20px;
 }
 
-.hebergements-cards .card-content {
+.hebergements-cards .card-txt {
 	width: 100%;
 	padding-left: 15px;
 	display: flex;
@@ -315,14 +323,14 @@ button {
 	margin-top: 33px;
 }
 
-.populaires-cards img {
+.populaires-cards .card-content img {
 	width: 33%;
 	height: 136px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populaires-cards .card-txt {
 	width: 67%;
 	padding-left: 15px;
 	display: flex;
@@ -342,6 +350,11 @@ button {
 
 .populaires-cards .card-rating {
 	margin-bottom: 5px;
+}
+
+.populaires-cards figure {
+	display: flex;
+	flex-direction: row;
 }
 
 /****** Activités ***********/
@@ -376,7 +389,7 @@ button {
 	border-top-right-radius: 20px;
 }
 
-.activity-cards .card-content {
+.activity-cards .card-txt {
 	width: 100%;
 	padding-left: 15px;
 	padding-bottom: 15px;
@@ -517,6 +530,14 @@ button {
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
 	/* ... */
+	main {
+		padding: 0;
+	}
+
+	.introduction, .recherche {
+		padding: 0 50px;
+	}
+
 	.main-container {
 		padding: 0;
 	}
@@ -541,6 +562,7 @@ button {
 		padding: 10px;
 		width: 50%;
 		text-align: center;
+		border-bottom: transparent solid 3px;
 	}
 
 	nav a:hover {
@@ -572,7 +594,7 @@ button {
 		display: none;
 	}
 
-	button {
+	#rechercher {
 		display: inline-block;
 		background-color: var(--main-color);
 		border: 0;
@@ -582,7 +604,7 @@ button {
 		border-radius: 20px;
 	}
 
-	button:hover {
+	#rechercher:hover {
 		background-color: #0044aa;
 	}
 
@@ -599,7 +621,7 @@ button {
 	}
 
 
-	.filtres a {
+	.filtres button {
 		margin-bottom: 10px;
 		width: 35%;
 	}
@@ -612,9 +634,14 @@ button {
 		flex-direction: column-reverse;
 	}
 
+	.hebergements-and-populaires > section {
+		border-radius: 0;
+	}
+
 	.hebergements {
 		width: 100%;
 		margin-top: 20px;
+		background-color: white !important;
 	}
 
 	.hebergements-cards {
@@ -656,10 +683,19 @@ button {
 	.activity-cards {
 		display: flex;
 		flex-direction: column;
+		align-items: center;
+		height: auto;
 	}
 
 	.activity-cards .card {
-		width: 100%;
+		width: 90%;
+		height: 132px;
+		margin-top: 96px;
+	}
+
+	.activity .populaires-title {
+		padding-left: 30px;
+		margin-bottom: 20px;
 	}
 
 	.footer {
