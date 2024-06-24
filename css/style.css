@@ -324,7 +324,7 @@ figure {
 }
 
 .populaires-cards .card-content img {
-	width: 33%;
+	width: 120px;
 	height: 136px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
