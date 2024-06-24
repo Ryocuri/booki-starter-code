@@ -42,7 +42,13 @@ nav {
 }
 
 nav a {
-	padding: 30px;
+	padding: 10px 30px;
+	border-top: transparent solid 3px;
+}
+
+nav a:hover {
+	color: #0065FC;
+	border-top: #0065FC solid 3px;
 }
 
 nav img {
@@ -56,11 +62,6 @@ main {
 
 header {
 	padding: 0 12px;
-}
-
-nav a:hover {
-	color: #0065FC;
-	border-top: #0065FC solid 5px;
 }
 
 /*Partie Titre intro*/
@@ -580,6 +581,7 @@ figure {
 		width: 50%;
 		text-align: center;
 		border-bottom: transparent solid 3px;
+		border-top: none;
 	}
 
 	nav a:hover {
